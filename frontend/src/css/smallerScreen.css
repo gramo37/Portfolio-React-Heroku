@@ -1,0 +1,76 @@
+@media only screen and (max-width: 821px) and (min-width: 450px) {
+  :root {
+    --primaryFontSize: 25px;
+    --secondaryFontSize: 15px;
+    --tertiaryFontSize: 15px;
+  }
+
+  .home-page-container {
+    min-height: 98vh;
+  }
+
+  .sideBar {
+    width: 40vw;
+    height: 125vh;
+  }
+
+  .sideBar > nav {
+    width: 30vw;
+  }
+
+  .sideBar > nav > ul > li > a {
+    margin: 0px;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .name {
+    font-size: var(--primaryFontSize);
+  }
+
+  .profession {
+    font-size: var(--secondaryFontSize);
+  }
+
+  .description {
+    font-size: var(--tertiaryFontSize);
+  }
+
+  .content-container > a > button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .content-container {
+    height: 50%;
+  }
+
+  .profile-photo-container {
+    height: 50%;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .profile-photo-container > img {
+    height: 80%;
+    width: 100%;
+  }
+
+  .projects-inner-inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* width: 80vw; */
+  }
+
+  .card {
+    margin: 10px 10px;
+    width: 30vw;
+  }
+}

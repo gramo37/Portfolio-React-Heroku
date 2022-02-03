@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&family=Source+Sans+Pro:wght@200&family=Supermercado+One&family=Work+Sans:wght@100&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+button {
+  margin: 10px 10px;
+}
+
+/* Scrollbar Settings */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* CSS Variables */
+:root {
+  --navPadding: 14px;
+  --nameFontFamily: "Supermercado One", cursive;
+  --primaryFontFamily: "IBM Plex Sans Thai Looped", sans-serif;
+  --secondaryFontFamily: "Source Sans Pro", sans-serif;
+  --tertiaryFontFamily: "Work Sans", sans-serif;
+  --sideBarBackground: rgb(47, 115, 175);
+  --primaryBackground: rgb(122, 131, 255);
+  --secondaryBackground: blueviolet;
+  --primaryFontSize: 33px;
+  --secondaryFontSize: 20px;
+  --tertiaryFontSize: 24px;
+}
+
+/* Home */
+.container {
+  overflow: hidden;
+}
+
+.home-page-container {
+  display: flex;
+  min-height: 80vh;
+  background-color: var(--primaryBackground);
+}
+
+.main {
+  margin-left: 20vw;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 20px;
+}
+
+.content-container {
+  width: 60%;
+  color: white;
+  line-height: 45px;
+  margin-left: 20px;
+}
+
+.content-container > a > button {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(79, 120, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.content-container > a {
+  text-decoration: none;
+}
+
+.content-container > a > button:hover {
+  background-color: aliceblue;
+  color: rgb(79, 120, 255);
+}
+
+.content-container > h3 {
+  font-weight: 100;
+}
+
+.name {
+  font-size: var(--primaryFontSize);
+  font-family: var(--primaryFontFamily);
+}
+
+.profession {
+  font-family: var(--secondaryFontFamily);
+  font-size: var(--secondaryFontSize);
+}
+
+.description {
+  font-size: var(--tertiaryFontSize);
+  font-family: var(--tertiaryFontFamily);
+  color: white;
+  font-weight: 500;
+}
+
+.profile-photo-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo-container > img {
+  width: 50%;
+  height: 100%;
+}
+
+/* Sidebar */
+.icon-container {
+  z-index: 12;
+  display: none;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.sideBar {
+  display: flex;
+  z-index: 10;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 20vw;
+  height: 105vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: var(--navPadding) 5px;
+  background-color: var(--sideBarBackground);
+}
+
+.sideBar > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.sideBar > div > h3 {
+  color: aliceblue;
+  font-size: large;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+  font-family: var(--nameFontFamily);
+}
+
+.sideBar > div > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.sideBar > nav {
+  width: 20vw;
+}
+
+.sideBar > nav > ul {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 28px;
+  align-items: flex-start;
+}
+
+.sideBar > nav > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: large;
+  padding: var(--navPadding) 5px;
+}
+
+.sideBar > nav > ul > li > a {
+  text-decoration: none;
+  width: 100%;
+  color: white;
+  padding: var(--navPadding) 0px;
+  margin-left: 10px;
+}
+
+.sideBar > nav > ul > li:hover {
+  background-color: rgb(69, 73, 73);
+}
+
+/* Skills */
+.projects-inner-container {
+  padding: 0px;
+}
+
+.inner-container {
+  padding: 80px;
+}
+
+.inner-heading {
+  color: white;
+  font-family: var(--primaryFontFamily);
+  text-align: center;
+  font-size: var(--primaryFontSize);
+}
+
+.inner-content {
+  color: white;
+  font-family: var(--secondaryFontFamily);
+  font-size: var(--secondaryFontSize);
+}
+
+.inner-content > p {
+  margin-top: 20px;
+}
+
+.about-me-inner-content {
+  color: white;
+  min-height: 80vh;
+  font-family: var(--secondaryFontFamily);
+  font-size: 25px;
+}
+
+.about-me-inner-content > p {
+  margin-top: 25px;
+}
+
+.projects-inner-inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  width: 68vw;
+}
+
+.card {
+  margin: 35px 35px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px 25px;
+  box-shadow: 2px 2px 5px 2px, -1px -1px 5px 2px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .card {
+    margin: 14px 12px;
+  }
+}
+
+.card-heading {
+  font-size: var(--secondaryFontSize);
+  font-family: var(--secondaryFontFamily);
+}
+
+.card-content {
+  font-size: var(--tertiaryFontSize);
+  font-family: var(--tertiaryFontFamily);
+  margin: 5px 0px;
+  height: 160px;
+}
+
+.card-content > p {
+  overflow: auto;
+  text-align: start;
+  overflow-wrap: break-word;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card-buttons > a > button {
+  background-color: rgb(59, 96, 165);
+  padding: 7px 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.card-buttons > a > button:hover {
+  background-color: white;
+  color: rgb(59, 96, 165);
+}
+
+/* Projects */
+.projects-container {
+  /* height: 80vh; */
+  background-color: var(--secondaryBackground);
+}
+
+/* About - section */
+.about-me-container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--secondaryBackground);
+}
+
+/* Footer */
+.footer {
+  margin-left: 20vw;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

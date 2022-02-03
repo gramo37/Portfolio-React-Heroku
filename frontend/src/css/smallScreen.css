@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1105px) {
+  .sideBar {
+    transform: translate(-100%, 0%);
+    opacity: 0;
+    z-index: 0;
+    transition: all 1s;
+  }
+
+  .sideBarClose {
+    transform: translate(-100%, 0%);
+    opacity: 0;
+    z-index: 0;
+  }
+
+  .sideBarOpen {
+    transform: translate(0%, 0%);
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .card {
+    margin: 10px 10px;
+    width: 300px;
+  }
+
+  .main {
+    margin: 0px;
+    width: 99vw;
+  }
+
+  .icon-container {
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .inner-content {
+    text-align: center;
+  }
+
+  .about-me-inner-content {
+    font-size: 18px;
+  }
+
+  .projects-inner-inner-container {
+    width: 92vw;
+  }
+
+  .footer {
+    margin: 0px;
+    padding: 0px 5px;
+  }
+}

@@ -1,0 +1,97 @@
+@media only screen and (max-width: 450px) and (min-width: 100px) {
+  :root {
+    --primaryFontSize: 20px;
+    --secondaryFontSize: 17px;
+    --tertiaryFontSize: 15px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home-page-container {
+    min-height: 98vh;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .content-container {
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  .content-container > div {
+    width: 100%;
+    text-align: left;
+  }
+
+  .content-container > a > button {
+    padding: 2vmax 8vmax;
+    font-size: 13px;
+    margin: 7px 0px;
+  }
+
+  .name {
+    font-size: var(--primaryFontSize);
+  }
+
+  .profession {
+    font-size: var(--secondaryFontSize);
+  }
+
+  .description {
+    font-size: var(--tertiaryFontSize);
+  }
+
+  .profile-photo-container {
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  .profile-photo-container > img {
+    height: 80%;
+    width: 60%;
+  }
+
+  .sideBar {
+    width: 40vw;
+    height: 125vh;
+  }
+
+  .sideBar > nav {
+    width: 30vw;
+  }
+
+  .sideBar > nav > ul > li > a {
+    margin: 0px;
+  }
+
+  .inner-container {
+    padding: 20px;
+  }
+
+  .inner-content {
+    text-align: center;
+  }
+
+  .projects-inner-inner-container {
+    width: 90vw;
+  }
+
+  .card {
+    margin: 10px 10px;
+    width: 50vw;
+  }
+}
